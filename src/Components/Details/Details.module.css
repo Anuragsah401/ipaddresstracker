@@ -1,13 +1,42 @@
 .detailsContainer {
-    display: flex;
-    justify-content: space-between;
-     border: none;
-     border-radius: 10px;
-     width: 60%;
-     background-color: #fff
-     
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-radius: 10px;
+  min-width: 70%;
+  background-color: #fff;
+  font-family: "Rubik", sans-serif;
 }
 
 .detailCard {
-    padding : 1.5rem 1rem
+  padding: 2rem 2rem;
+  text-align: left;
+  /* max-width: 30%; */
+}
+
+.detail {
+  position: relative;
+}
+
+.detail::before {
+  content: "";
+  width: 0.9px;
+  height: 100%;
+  background-color: hsla(0, 0%, 59%, 0.479);
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.detailCard p {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 0.5rem;
+}
+
+.detailCard h2 {
+  /* font-size: 0.7em; */
+  font-weight: 500;
 }

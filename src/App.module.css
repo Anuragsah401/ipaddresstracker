@@ -1,40 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .appContainer {
-    text-align: center;
+  text-align: center;
 }
 
 .header {
-    background-image: url("/src/Assets/Images/pattern-bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 35vh;
-    position: relative;
+  background-image: url("/src/Assets/Images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  position: relative;
 }
 
 .header h2 {
-    font-family: 'Rubik', sans-serif;
-    color: #fff;
-    font-weight: 400;
-    font-size: 1.9em;
-    padding: 1.6rem 0
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.9em;
+  padding: 1.6rem 0;
 }
 
-
 .detailBox {
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 999;
-    top: 10rem;
-    display: flex;
-    justify-content: center;
-    /* left: 20%; */
+  position: absolute;
+  width: 100%;
+  /* margin: 0 auto; */
+  z-index: 999;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  /* left: 20%; */
 }

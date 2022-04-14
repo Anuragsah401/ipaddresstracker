@@ -10,7 +10,7 @@ const Details = () => {
     },
     {
       name: "LOCATION",
-      value: "Kathmandu",
+      value: "Kathmandu, Nepal",
     },
     {
       name: "TIMEZONE",
@@ -26,8 +26,10 @@ const Details = () => {
       {details.map((detail) => {
         return (
           <div key={detail.name} className={classes.detailCard}>
-            <p>{detail.name}</p>
-            <h2>{detail.value}</h2>
+            <div className={classes.detail}>
+              <p>{detail.name}</p>
+              <h2>{detail.value}</h2>
+            </div>
           </div>
         );
       })}

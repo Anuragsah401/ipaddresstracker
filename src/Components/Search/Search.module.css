@@ -1,32 +1,32 @@
 .search {
-    /* display: flex;
+  /* display: flex;
     align-items: center;
     justify-content: center; */
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .searchBar {
-    padding: 0.9rem 1rem;
-    outline: none;
-    font-size: 1rem;
-    border: none;
-    width: 500px;
-    border-radius: 10px 0px 0px 10px
+  padding: 0.9rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  border: none;
+  width: 500px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .searchBtn {
-    padding: 0.9rem 1.3rem;
-    /* outline: none; */
-    border: none;
-    /* width: 800px; */
-    height: 100%;
-    font-size: 1rem;
-    border-radius: 0 10px 10px 0;
-    background-color: #000;
-    display: inline-block;
-    cursor: pointer;
+  padding: 0.9rem 1.3rem;
+  /* outline: none; */
+  border: none;
+  /* width: 800px; */
+  height: 100%;
+  font-size: 1rem;
+  border-radius: 0 10px 10px 0;
+  background-color: #000;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .searchBtn:hover {
-    background-color: hsl(0, 0%, 17%);;
+  background-color: hsl(0, 0%, 17%);
 }
