@@ -1,0 +1,13 @@
+.detailsContainer {
+    display: flex;
+    justify-content: space-between;
+     border: none;
+     border-radius: 10px;
+     width: 60%;
+     background-color: #fff
+     
+}
+
+.detailCard {
+    padding : 1.5rem 1rem
+}
