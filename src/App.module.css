@@ -17,6 +17,11 @@
   background-size: cover;
   height: 35vh;
   position: relative;
+  /* min-height: 200px; */
+}
+
+.map {
+  height: 65vh;
 }
 
 .header h2 {
@@ -28,12 +33,25 @@
 }
 
 .detailBox {
-  position: absolute;
+  /* position: sticky; */
   width: 100%;
-  /* margin: 0 auto; */
-  z-index: 999;
-  top: 10rem;
+  /* z-index: 999; */
+  /* top: 10rem; */
   display: flex;
   justify-content: center;
-  /* left: 20%; */
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .header h2 {
+    font-size: 1.2em;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .detailBox {
+    flex-wrap: wrap;
+    /* flex: auto 1 1; */
+  }
 }

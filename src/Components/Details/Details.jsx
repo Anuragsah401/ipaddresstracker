@@ -1,34 +1,38 @@
 import React from "react";
 
 import classes from "./Details.module.css";
+import Loading from "../UI/Loading/Loading";
 
-const Details = () => {
+const Details = (props) => {
+  const { ipAddress, location, timeZone, isp, loading } = props;
+
   const details = [
     {
       name: "IP ADDRESS",
-      value: "127.0.0.1",
+      value: ipAddress,
     },
     {
       name: "LOCATION",
-      value: "Kathmandu, Nepal",
+      value: `${location.city}, ${location.country}`,
     },
     {
       name: "TIMEZONE",
-      value: "UTC-05:00",
+      value: `${timeZone.abbreviation}-${timeZone.current_time}`,
     },
     {
       name: "ISP",
-      value: "World Link",
+      value: isp,
     },
   ];
   return (
     <div className={classes.detailsContainer}>
-      {details.map((detail) => {
+      {details.map((detail, index) => {
+        // const IsfirstDetail =
         return (
           <div key={detail.name} className={classes.detailCard}>
             <div className={classes.detail}>
               <p>{detail.name}</p>
-              <h2>{detail.value}</h2>
+              {!loading ? <h2>{detail.value}</h2> : <Loading />}
             </div>
           </div>
         );
